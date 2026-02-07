@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Gestor De Bilbioteca</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Brandon Rodrigo Méndez Méndez</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Gestor De Bilbioteca</h1>
+							<span class="image fit"><img src="images/SistemaDeBlioteca.jpeg" alt="" /></span>
+							<p>Este proyecto consiste en el diseño y desarrollo integral de un Sistema de Gestión de Biblioteca de escritorio, 
+							construido en Python 3.12+ bajo una estricta arquitectura Modelo-Vista-Controlador (MVC) que desacopla 
+							la lógica de negocio de la interfaz de usuario y la persistencia de datos para garantizar la escalabilidad y 
+							mantenibilidad del código. 
+							<p></p>
+							La solución se fundamenta en una base de datos relacional MySQL diseñada meticulosamente bajo las reglas de 
+							normalización, implementando tablas intermedias para resolver relaciones complejas entre autores y obras, 
+							asegurando así la atomicidad y la eliminación de redundancias en el almacenamiento de la información bibliográfica. 
+							A nivel funcional, el sistema integra controladores robustos que ejecutan validaciones transaccionales críticas 
+							antes de confirmar cualquier operación gestiona el ciclo de vida de los préstamos verificando en tiempo real 
+							la disponibilidad del stock e inventario , aplica reglas de negocio para validar la vigencia de la inscripción
+							de los usuarios calculando automáticamente cuotas por mora 
+							<p></p>
+							Se implementan algoritmos de validación cruzada que impiden la reserva de materiales si el usuario ya cuenta 
+							con un préstamo activo del mismo título. La interfaz de 
+							usuario, desarrollada con Tkinter y enriquecida con widgets como tkcalendar, permite una interacción fluida y 
+							eficiente para la administración de catálogos y usuarios, respaldada por un sistema de integridad referencial 
+							que protege la consistencia de los datos en todo momento.</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>Todos los derechos reservados.</li>
+						<li>Diseñado por Brandon Rodrigo Méndez Méndez</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Analisis De Sentimientos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Brandon Rodrigo Méndez Méndez</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Analisis De Sentimientos</h1>
+							<span class="image fit"><img src="images/AnalisisDeSentimientos.jpeg" alt="" /></span>
+							<p>Este proyecto de investigación se centró en predecir el resultado de las elecciones presidenciales de México 2024 analizando la percepción pública en la red social X antes Twitter. Utilizando técnicas avanzadas de Minería de Datos y Procesamiento de Lenguaje Natural (NLP), se evaluaron las tendencias de opinión hacia las candidatas Claudia Sheinbaum y Xóchitl Gálvez durante etapas críticas de la campaña, como la precampaña y el post-debate.
+								Uno de los principales retos fue la limitación de acceso a la API oficial de X. Para superar esto, se implementó una solución de Web Scraping automatizado utilizando la herramienta "Bardeen", lo que permitió la extracción eficiente de grandes volúmenes de datos (tweets) para su posterior análisis.
+								La metodología Implementada siguió un pipeline riguroso de Ciencia de Datos utilizando Python como lenguaje principal. 
+								<p></p>
+								Tras la extracción, se procesaron los datasets crudos utilizando bibliotecas como Pandas. Se realizó una limpieza profunda que incluyó la eliminación de ruido (hashtags irrelevantes, usuarios, caracteres especiales), corrección ortográfica y tokenización de texto para preparar la información.
+								Se entrenó un modelo de clasificación supervisada basado en el algoritmo Naive Bayes (utilizando Scikit-learn). Este modelo aprendió a clasificar automáticamente los comentarios en tres categorías de polaridad: Positivo, Negativo y Neutral.
+								Para garantizar la fiabilidad de los resultados, no solo se confió en el algoritmo. Se realizaron pruebas estadísticas descriptivas e inferenciales utilizando Minitab, calculando Intervalos de Confianza (IC) del 95% y generando Matrices de Confusión para evaluar la precisión de las predicciones.
+								Se emplearon técnicas de reducción de dimensionalidad (t-SNE) y nubes de palabras para identificar patrones semánticos y visualizar la distribución de sentimientos. 
+								<p></p>
+								El análisis de 1,200 tweets procesados reveló diferencias significativas en la percepción digital:
+								Tras el debate se detectó un cambio notable tras los debates presidenciales, donde Claudia Sheinbaum incrementó sus menciones positivas, mientras que Xóchitl Gálvez experimentó un aumento en la percepción negativa.
+								En la predicción final el modelo proyectó correctamente a Claudia Sheinbaum como la ganadora probable, basándose en una aceptación positiva neta superior y una tasa de rechazo significativamente menor 116 comentarios negativos frente a los 208 de la oposición.
+							<p></p>
+								Tecnologías Utilizadas: Python, Pandas, Scikit-learn (Naive Bayes), Matplotlib, Tableau, Minitab, Web Scraping (Bardeen).</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>Todos los derechos reservados.</li>
+						<li>Diseñado por Brandon Rodrigo Méndez Méndez</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
