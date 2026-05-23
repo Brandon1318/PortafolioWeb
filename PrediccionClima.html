@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Modelo Predictivo Meteorológico</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="title">Brandon Rodrigo Méndez Méndez</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">Modelo Predictivo Meteorológico</h1>
+
+					<span class="image fit">
+						<img src="images/ModelosComparativa.png" alt="Modelo Predictivo Meteorológico" />
+					</span>
+
+                    <h2>Descripción técnica</h2>
+
+                        <p>
+                            Este proyecto fue desarrollado en R como parte de la materia de Máquinas de Aprendizaje.
+                            El objetivo principal fue construir un flujo completo de Machine Learning para predecir
+                            la temperatura media diaria a partir de un dataset meteorológico histórico. El problema
+                            se abordó como una tarea de regresión, ya que la variable objetivo fue MeanTemp.
+                        </p>
+
+                        <p>
+                            En la primera etapa se realizó el proceso KDD, enfocado en el análisis exploratorio de
+                            datos. Durante esta fase se revisó la estructura general del dataset, los tipos de variables,
+                            la presencia de valores faltantes, la distribución de la variable objetivo, el comportamiento
+                            temporal de los datos y la relación entre las variables meteorológicas. Este análisis permitió
+                            comprender mejor el conjunto de datos antes de aplicar los modelos predictivos.
+                        </p>
+
+                        <p>
+                            Posteriormente, se entrenaron modelos base de regresión utilizando algoritmos como
+                            Regresión Lineal Múltiple, Support Vector Regression, Ridge Regression y KNN. Cada modelo
+                            fue evaluado mediante métricas como RMSE, MAE y R², con el objetivo de establecer una
+                            línea base de comparación. Además, se aplicó PCA para analizar si la reducción de
+                            dimensionalidad mejoraba el rendimiento de los modelos.
+                        </p>
+
+                        <p>
+                            En la segunda etapa se aplicaron mejoras a los modelos mediante ingeniería de
+                            características, normalización, ajuste de hiperparámetros y nuevas variables derivadas.
+                            Se generaron características como rangos de temperatura, transformaciones de precipitación
+                            y variables cíclicas para representar patrones temporales. Después, se volvieron a entrenar
+                            y evaluar los modelos para comparar su desempeño frente a las versiones base.
+                        </p>
+
+                        <p>
+                            Finalmente, se implementaron modelos avanzados como Random Forest, XGBoost y GBM,
+                            además de ensambles entre modelos. Estos algoritmos permitieron capturar relaciones más
+                            complejas entre las variables climáticas. Al final del proyecto se compararon todos los
+                            resultados obtenidos para identificar el modelo con mejor desempeño predictivo.
+                        </p>
+
+					<h2>Resultados obtenidos</h2>
+					<ul>
+                        <li>KDD y análisis exploratorio del dataset meteorológico.</li>
+                        <li>Limpieza de datos y tratamiento de valores faltantes.</li>
+                        <li>Análisis de correlaciones y comportamiento temporal.</li>
+                        <li>Aplicación de PCA para evaluar reducción de dimensionalidad.</li>
+                        <li>Entrenamiento de modelos base de regresión.</li>
+                        <li>Evaluación de modelos mediante RMSE, MAE y R².</li>
+                        <li>Ingeniería de características y creación de nuevas variables.</li>
+                        <li>Ajuste de hiperparámetros para mejorar el rendimiento.</li>
+                        <li>Entrenamiento de modelos avanzados como Random Forest, XGBoost y GBM.</li>
+                        <li>Comparación final entre modelos base, modelos mejorados, modelos avanzados y ensambles.</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>Todos los derechos reservados.</li>
+					<li>Diseñado por Brandon Rodrigo Méndez Méndez</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
